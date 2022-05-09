@@ -1,11 +1,10 @@
 n=int(input())
 while(n>0):
     x,y = [int(i) for i in input().split()]
-    for i in range(x):
-        z=int(input())
-        if(y>z):
+    for i in input().split():
+        if(y>int(i)):
             print(1,end="")
-            y=y-z
+            y=y-int(i)
         else:
             print(0,end="")
     print()
