@@ -4,7 +4,7 @@
 #define ll long long
 using namespace std;
 
-string judge(){
+string solve(){
   string s;
   cin >> s;
   //s is the string to check
@@ -19,12 +19,14 @@ string judge(){
 }
 
 int main(){
+  ios::sync_with_stdio(0);
+  cin.tie(0);
   ll n;
   //n is the number of test cases
   cin >> n;
   //getting the number of test cases 
   while(n--){
     //calling the judge function n times
-    cout << judge(); 
+    cout << solve(); 
   }
 }
