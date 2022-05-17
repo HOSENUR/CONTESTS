@@ -1,32 +1,25 @@
 #include <bits/stdc++.h>
-#include <cmath>
 using namespace std;
 typedef long long ll;
-#define FL(i,a,b) for(int i= a; i<= b; i++)
+#define FL(i,a,b) for(int i= a; i*i<b; i++)
 
 string solve()
 {
   ll n;
   cin>>n;
+  if(n>2 && n%2==0)
+  {
+    return "0";
+  }
   ll c=0;
-  FL(i,1,sqrt(n))
+  FL(i,2,n)
   {
     if(n%i==0)
     {
-      c+=i;
-      if(i!=1)
-      {
-        c+=n/i;
-      }
+      return "0";
     }
   }
-  if(c==n)
-  {
-    return "YES";
-  }
-  else {  
-  return "NO";
-  }
+  return "1";
 }
 int main()
 {
@@ -34,3 +27,4 @@ int main()
   cin.tie(0);
   cout<<solve();
 }
+

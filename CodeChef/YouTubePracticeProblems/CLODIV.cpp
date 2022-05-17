@@ -3,9 +3,12 @@ using namespace std;
 typedef long long ll;
 #define FL(i,a,b) for(int i= a; i<= b; i++)
 
-string solve()
+int solve()
 {
-  return "ANSWER";
+  ll a,b;
+  cin>>a;
+  cin>>b;
+  return (a-(a%b));
 }
 int main()
 {
